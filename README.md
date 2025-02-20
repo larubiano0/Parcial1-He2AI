@@ -18,13 +18,14 @@
 ---
 
 ## Descripción del Proyecto 📈
-**Problema:** ¿Es posible predecir con precisión el precio del S&P 500 usando IA?  
-**Objetivo:** Desarrollar modelos de machine learning para predecir los precios de cierre del índice S&P 500, analizando variables financieras históricas y ratios clave.  
+**Problema:** ¿Es posible predecir si el precio del S&P 500 subirá o bajará usando IA?  
+**Objetivo:** Desarrollar modelos de machine learning para predecir la dirección del movimiento del índice S&P 500 (subida o bajada) como una variable binaria, analizando variables financieras históricas y ratios clave.  
 
 **Aplicaciones prácticas:**
-- Ayudar a inversores a optimizar estrategias de trading.
-- Reducir riesgos en decisiones financieras.
-- Explorar el potencial de la IA en mercados volátiles.
+- Ayudar a inversores a tomar decisiones informadas sobre cuándo comprar o vender.
+- Reducir riesgos en decisiones financieras al anticipar movimientos del mercado.
+- Explorar el potencial de la IA en mercados volátiles para estrategias de trading. 
+
 
 ---
 
