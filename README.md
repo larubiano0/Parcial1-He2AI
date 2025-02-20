@@ -1,7 +1,7 @@
 # Parcial1-He2AI
-# Predicción del S&P 500 con Machine Learning 🚀
+# Predicción del movimiento de la accion de Apple con Machine Learning 🚀
 
-¡Bienvenido al repositorio de nuestro proyecto de IA para predecir el precio del S&P 500! Este trabajo fue desarrollado como parte de un curso universitario de inteligencia artificial, con el objetivo de explorar cómo los modelos de aprendizaje automático pueden ayudar en la toma de decisiones financieras.
+¡Bienvenido al repositorio de nuestro proyecto de IA para predecir el precio de la accion de Apple! Este trabajo fue desarrollado como parte de un curso universitario de inteligencia artificial, con el objetivo de explorar cómo los modelos de aprendizaje automático pueden ayudar en la toma de decisiones financieras.
 
 ---
 
