@@ -13,7 +13,7 @@
 - [Resultados](#resultados)
 - [Ejecución del Código](#ejecución-del-código)
 - [Limitaciones y Futuras Mejoras](#limitaciones-y-futuras-mejoras)
-- [Contribuidores](#contribuidores)
+
 
 ---
 
