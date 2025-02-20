@@ -73,3 +73,23 @@ Los pasos clave incluyeron:
 1. **Requisitos:**  
    ```bash
    pip install pandas numpy scikit-learn xgboost
+   Pasos:
+
+2. **Ejecutar el Jupyter Notebook script_stock_market_variation.ipynb.**
+
+El script carga los datos, realiza el preprocesamiento, entrena los modelos y muestra los resultados.
+
+## Limitaciones y Futuras Mejoras 🔮
+**Desafíos identificados:**
+
+-Dificultad para predecir eventos inesperados (ej. crisis económicas).
+
+-Dependencia de datos históricos de calidad.
+
+**Propuestas de mejora:**
+
+-Incorporar datos de redes sociales y noticias.
+
+-Probar modelos de deep learning (LSTM, Transformers).
+
+-Optimizar ventanas temporales y parámetros.
