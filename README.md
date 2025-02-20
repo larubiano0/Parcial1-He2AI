@@ -1,7 +1,7 @@
 # Parcial1-He2AI
 # Predicción del movimiento de la accion de Apple con Machine Learning 🚀
 
-¡Bienvenido al repositorio de nuestro proyecto de IA para predecir el precio de la accion de Apple! Este trabajo fue desarrollado como parte de un curso universitario de inteligencia artificial, con el objetivo de explorar cómo los modelos de aprendizaje automático pueden ayudar en la toma de decisiones financieras.
+¡Bienvenido al repositorio de nuestro proyecto de IA para predecir el precio de la accion de Apple a 30 dias! Este trabajo fue desarrollado como parte de un curso universitario de inteligencia artificial, con el objetivo de explorar cómo los modelos de aprendizaje automático pueden ayudar en la toma de decisiones financieras.
 
 ---
 
@@ -14,15 +14,14 @@
 - [Ejecución del Código](#ejecución-del-código)
 - [Limitaciones y Futuras Mejoras](#limitaciones-y-futuras-mejoras)
 
-
 ---
 
 ## Descripción del Proyecto 📈
-**Problema:** ¿Es posible predecir si el precio del S&P 500 subirá o bajará usando IA?  
-**Objetivo:** Desarrollar modelos de machine learning para predecir la dirección del movimiento del índice S&P 500 (subida o bajada) como una variable binaria, analizando variables financieras históricas y ratios clave.  
+**Problema:** ¿Es posible predecir como sera el stock de la accion de Apple en 30 dias?  
+**Objetivo:** Desarrollar modelos de machine learning para predecir la dirección del movimiento de la accion de Apple (subida o bajada) como una variable binaria, analizando variables financieras históricas y ratios clave.  
 
 **Aplicaciones prácticas:**
-- Ayudar a inversores a tomar decisiones informadas sobre cuándo comprar o vender.
+- Ayudar a inversores a tomar decisiones informadas sobre como estara el stock de las acciones a futuro.
 - Reducir riesgos en decisiones financieras al anticipar movimientos del mercado.
 - Explorar el potencial de la IA en mercados volátiles para estrategias de trading. 
 
