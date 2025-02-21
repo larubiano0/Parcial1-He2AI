@@ -107,7 +107,9 @@ Ridge y Lasso mostraron desempeños similares, aunque Lasso es útil para identi
 
    **2. Ejecutar el script principal:**
 
-   python apple_stock_prediction.py
+   ```python
+   apple_stock_prediction.py
+   ```
       
    El código realiza el preprocesamiento, entrena los tres modelos y muestra los resultados comparativos.from datasets import load_dataset
 
