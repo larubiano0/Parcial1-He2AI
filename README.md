@@ -60,9 +60,6 @@ Los pasos clave incluyeron:
 2. **Feature Engineering:**  
    - Creación de ventanas temporales: se generaron Close_denoised_lag_1 hasta Close_denoised_lag_40 (40 días históricos de precios).
    - Suavizado de los precios (Open y Close) usando una media móvil de 5 días para reducir el ruido.
-3. **Transformaciones:**  
-   - Codificación one-hot del trimestre para capturar patrones estacionales, evitando multicolinealidad con drop_first=True.
-   - Normalización de las variables numéricas para asegurar una escala coherente entre los modelos.
 
 ---
 
