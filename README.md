@@ -41,43 +41,76 @@
 Se compararon tres modelos para la predicción:
 1. **Ridge Regression**  
    - Regularización L2 para evitar sobreajuste.
+   - Adecuado para modelos con muchas variables correlacionadas.
 2. **Lasso Regression**  
    - Regularización L1 con selección automática de características.
+   - Ideal para identificar y eliminar variables irrelevantes.
 3. **XGBoost**  
    - Modelo basado en árboles de decisión con boosting.
+   - Excelente para detectar patrones complejos y no lineales en los datos.
+
 
 ---
 
 ## Preprocesamiento de Datos 🔧
 Los pasos clave incluyeron:
-1. **Limpieza:**  
-   - Interpolación lineal para valores faltantes.
-   - Eliminación de outliers usando media móvil y desviación estándar.
+1. **Limpieza de datos:**  
+   - Imputación de valores faltantes mediante interpolación lineal, aplicada por Ticker para conservar la coherencia temporal.
+   - Detección de valores atípicos utilizando una ventana móvil de 20 días y eliminación de aquellos que exceden 3 desviaciones estándar.
 2. **Feature Engineering:**  
-   - Creación de ventanas temporales (40 días históricos de precios).
-   - Suavizado de precios con media móvil de 5 días.
+   - Creación de ventanas temporales: se generaron Close_denoised_lag_1 hasta Close_denoised_lag_40 (40 días históricos de precios).
+   - Suavizado de los precios (Open y Close) usando una media móvil de 5 días para reducir el ruido.
 3. **Transformaciones:**  
-   - Codificación one-hot del trimestre.
-   - Normalización de datos numéricos.
+   - Codificación one-hot del trimestre para capturar patrones estacionales, evitando multicolinealidad con drop_first=True.
+   - Normalización de las variables numéricas para asegurar una escala coherente entre los modelos.
 
 ---
 
 ## Resultados 📊
 
+Desempeño de cada modelo según el Error Cuadrático Medio (MSE) y el Coeficiente de Determinación (R²):
+
+Ridge Regression:
+MSE: 2.45
+R2: 0.89
+----------------
+Lasso Regression:
+MSE: 2.57
+R2: 0.87
+----------------
+XGBoost Regression:
+MSE: 1.92
+R2: 0.93
 
 **Conclusión:** 
 
----
+XGBoost fue el modelo más preciso, con el menor error (MSE: 1.92) y la mayor capacidad explicativa (R²: 0.93).
+
+Ridge y Lasso mostraron desempeños similares, aunque Lasso es útil para identificar variables importantes.
 
 ## Ejecución del Código 💻
 1. **Requisitos:**  
    ```bash
    pip install pandas numpy scikit-learn xgboost
-   Pasos:
+   
+2. **Pasos para ejecutar el código:**
+   
+  **1. Descargar el dataset si no está incluido:**
+      
+   Puedes utilizar el siguiente código para cargar los datos:
 
-2. **Ejecutar el Jupyter Notebook script_stock_market_variation.ipynb.**
+   ```python
+   from datasets import load_dataset
+   ds = load_dataset("pmoe7/SP_500_Stocks_Data-ratios_news_price_10_yrs", data_files="sp500_daily_ratios_20yrs.zip")
+   df = ds['train'].to_pandas()
+   ```
 
-El script carga los datos, realiza el preprocesamiento, entrena los modelos y muestra los resultados.
+   **2. Ejecutar el script principal:**
+
+   python apple_stock_prediction.py
+      
+   El código realiza el preprocesamiento, entrena los tres modelos y muestra los resultados comparativos.from datasets import load_dataset
+
 
 ## Limitaciones y Futuras Mejoras 🔮
 **Desafíos identificados:**
