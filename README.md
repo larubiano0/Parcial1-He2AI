@@ -18,7 +18,7 @@
 
 ## Descripción del Proyecto 📈
 **Problema:** ¿Es posible predecir cómo será el stock de la acción de Apple en 30 dias?  
-**Objetivo:** Desarrollar modelos de machine learning para predecirel valor de la accion de Apple (subida o bajada) como una variable binaria, analizando variables financieras históricas y ratios clave.  
+**Objetivo:** Desarrollar modelos de machine learning para predecir el valor de la accion de Apple a 30 días a partir de datos historicos.
 
 **Aplicaciones prácticas:**
 - Ayudar a inversores a tomar decisiones informadas sobre como estara el stock de las acciones a futuro.
