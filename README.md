@@ -1,7 +1,7 @@
 # Parcial1-He2AI
 # Predicción del movimiento de la accion de Apple con Machine Learning 🚀
 
-¡Bienvenido al repositorio de nuestro proyecto de IA para predecir el precio de la accion de Apple a 30 dias! Este trabajo fue desarrollado como parte de un curso universitario de inteligencia artificial, con el objetivo de explorar cómo los modelos de aprendizaje automático pueden ayudar en la toma de decisiones financieras.
+¡Bienvenido al repositorio de nuestro proyecto de IA para predecir el precio de la accion de Apple a 30 días! Este trabajo fue desarrollado como parte de un curso universitario de inteligencia artificial, con el objetivo de explorar cómo los modelos de aprendizaje automático pueden ayudar en la toma de decisiones financieras.
 
 ---
 
@@ -17,7 +17,7 @@
 ---
 
 ## Descripción del Proyecto 📈
-**Problema:** ¿Es posible predecir como sera el stock de la accion de Apple en 30 dias?  
+**Problema:** ¿Es posible predecir cómo será el stock de la acción de Apple en 30 dias?  
 **Objetivo:** Desarrollar modelos de machine learning para predecir la dirección del movimiento de la accion de Apple (subida o bajada) como una variable binaria, analizando variables financieras históricas y ratios clave.  
 
 **Aplicaciones prácticas:**
@@ -31,7 +31,7 @@
 ## Dataset Utilizado 📂
 **Fuente:** [SP 500 Stocks Data - Ratios, News, Price (10 yrs)](https://huggingface.co/datasets/pmoe7/SP_500_Stocks_Data-ratios_news_price_10_yrs)  
 **Características:**
-- **Período:** 20 años de datos diarios.
+- **Período:** 16 años de datos diarios.
 - **Variables:** 23 columnas incluyendo precios (Open, Close), volumen, ratios financieros (ROE, ROA), y métricas temporales (año, trimestre).
 - **Tickers:** 321 empresas del S&P 500.
 
@@ -68,22 +68,22 @@ Los pasos clave incluyeron:
 Desempeño de cada modelo según el Error Cuadrático Medio (MSE) y el Coeficiente de Determinación (R²):
 
 Ridge Regression:
-MSE: 2.45
-R2: 0.89
+MSE: 15.95
+R2: 0.97
 ----------------
 Lasso Regression:
-MSE: 2.57
-R2: 0.87
+MSE: 14.74
+R2: 0.97
 ----------------
 XGBoost Regression:
-MSE: 1.92
-R2: 0.93
+MSE: 1.33
+R2: 1
 
 **Conclusión:** 
 
-XGBoost fue el modelo más preciso, con el menor error (MSE: 1.92) y la mayor capacidad explicativa (R²: 0.93).
+XGBoost fue el modelo más preciso, con el menor error (MSE: 1.33) y la mayor capacidad explicativa (R²: 1). Sin embargo, consideramos que existe un sobreajuste.
 
-Ridge y Lasso mostraron desempeños similares, aunque Lasso es útil para identificar variables importantes.
+Ridge y Lasso mostraron desempeños similares, aunque Lasso es útil para identificar variables importantes. 
 
 ## Ejecución del Código 💻
 1. **Requisitos:**  
@@ -105,10 +105,10 @@ Ridge y Lasso mostraron desempeños similares, aunque Lasso es útil para identi
    **2. Ejecutar el script principal:**
 
    ```python
-   apple_stock_prediction.py
+   script_stock_market_variation.ipynb
    ```
       
-   El código realiza el preprocesamiento, entrena los tres modelos y muestra los resultados comparativos.from datasets import load_dataset
+   El código realiza el preprocesamiento, entrena los tres modelos y muestra los resultados comparativos.
 
 
 ## Limitaciones y Futuras Mejoras 🔮
