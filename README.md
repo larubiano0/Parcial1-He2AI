@@ -77,11 +77,11 @@ R2: 0.97
 ----------------
 XGBoost Regression:
 MSE: 1.33
-R2: 1
+R2: 1.00
 
 **Conclusión:** 
 
-XGBoost fue el modelo más preciso, con el menor error (MSE: 1.33) y la mayor capacidad explicativa (R²: 1). Sin embargo, consideramos que existe un sobreajuste.
+XGBoost fue el modelo más preciso, con el menor error (MSE: 1.33) y la mayor capacidad explicativa (R²: 1.00). Sin embargo, consideramos que existe un sobreajuste.
 
 Ridge y Lasso mostraron desempeños similares, aunque Lasso es útil para identificar variables importantes. 
 
